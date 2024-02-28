@@ -1,6 +1,8 @@
+import 'package:facebook_interface_flutter/data/dados.dart';
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
 
+import '../components/area_criar_postagem.dart';
 import '../components/botao_circulo.dart';
 import '../utils/paleta_cores.dart';
 
@@ -32,12 +34,15 @@ class _HomeState extends State<Home> {
             ),
             actions: [
               BotaoCirculo(
-                  icone: LineIcons.search, iconeTamanho: 30, onPressed: () {}),
+                  icone: Icons.search, iconeTamanho: 30, onPressed: () {}),
               BotaoCirculo(
                   icone: LineIcons.facebookMessenger,
                   iconeTamanho: 30,
                   onPressed: () {}),
             ],
+          ),
+          SliverToBoxAdapter(
+            child: AreaCriarPostagem(usuario: usuarioAtual,),
           ),
           SliverToBoxAdapter(
             child: Container(
