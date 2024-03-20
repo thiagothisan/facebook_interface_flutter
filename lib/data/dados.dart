@@ -51,7 +51,7 @@ List<Usuario> usuariosOnline = [
 ];
 
 /* Lista de estórias */
-/*List<Estoria> estorias = [
+List<Estoria> estorias = [
   Estoria(
       usuario: usuariosOnline[0],
       urlImagem: "https://source.unsplash.com/JMWjOup32Fk/800x600",
@@ -88,7 +88,9 @@ List<Usuario> usuariosOnline = [
   ),
 ];
 
-*//* Lista de postagens *//*
+
+
+/* Lista de postagens */
 List<Postagem> postagens = [
   Postagem(
       usuario: usuariosOnline[0],
@@ -166,4 +168,4 @@ List<Postagem> postagens = [
       comentarios: 25,
       compartilhamentos: 3
   ),
-]; */
+];
